@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rokugatsu, A</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="src/js/script.js"></script>
+    <script>var exports = {};</script>
+    <script src="src/js/script.js" async></script>
+    <script src="src/js/main.js" async></script>
 </head>
 <body>
-    <div id="wrapper">
-        <header><h1 id="titles">Rokugatsu, A</h1></header>
-        <main><p>context</p></main>
-        <footer>by rokugatsua</footer>
+    <div class="wrapper">
+        <header class="page-header">
+            <!-- content here-->
+            <nav>
+                <h2 class="logo"> Rokugatsua </h2>
+                <button class="cta-contact">
+                    get in touch
+                </button>
+            </nav>
+            <div hidden="true">
+                <ul class="menu">
+                    <!-- list items here-->
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About Me</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="page-main">
+            <script src="src/js/contents.js" async></script>
+            <div id="content-box">
+            </div>
+        </main>
+        <footer class="page-footer">
+            <small class="logo">
+                by rokugatsua built with Typesript 4
+            </small>
+            <ul id="foot-nav">
+            </ul>
+        </footer>
     </div>
-    
 </body>
 </html>
