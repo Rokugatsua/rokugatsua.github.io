@@ -10,4 +10,21 @@ function loaderProcessElement() {
         processId.value = processVar;
 }
 loaderProcess();
+function menuOnRightTop() {
+    var ddmenu = document.getElementById("ddmenu");
+    if (ddmenu)
+        ddmenu.classList.toggle("show");
+}
+window.onclick = function (event) {
+    if (!event.target.matches('.cta-contact')) {
+        var dropdown = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            var openDropdown = dropdown[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+};
 //# sourceMappingURL=script.js.map

@@ -149,8 +149,9 @@ body {
 
 p {
     word-break: break-all;
+    text-align: justify;
+    text-justify: inter-word;
 }
-
 
 .contents header {
     padding-bottom: 5px;
@@ -179,6 +180,7 @@ p {
         flex-direction: column;
         justify-content: center;
     }
+
 }
 @media screen and (max-width:500px){
     .page-main aside img {
@@ -187,6 +189,9 @@ p {
     }
     .page-main div {
         max-width: 400px;
+    }
+    .dropdown-content {
+        left: 0;
     }
 }
 
@@ -231,3 +236,45 @@ p {
 
 }
 
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8em;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+  /* soci */
+  #list-soci{
+      padding-left: 13px;
+      margin: 5px 0px 5px 0px;
+  }
+  
+  #list-soci li {
+      display: block;
+      font-size: 0.8em;
+  }
+
+  #list-soci li a{
+      text-decoration: none;
+  }

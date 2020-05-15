@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rokugatsu, A</title>
+    <title>rokugatsua </title>
     <link rel="stylesheet" href="src/css/style.css">
     <script>var exports = {};</script>
     <script src="src/js/script.js" async></script>
@@ -13,19 +13,18 @@
     <div class="wrapper">
         <header class="page-header">
             <!-- content here-->
-            <nav>
-                <h2 class="logo"> Rokugatsua </h2>
-                <button class="cta-contact">
-                    get in touch
-                </button>
+            <nav class="top-nav">
+                <h2 class="logo"> Rokugatsua | &#12525&#12463&#12460&#12483&#12450 </h2>
+                <div class="right-menu">
+                    <button class="cta-contact" onclick="menuOnRightTop()">Menu</button>
+                    <div id="ddmenu" class="dropdown-content">
+                        <a href="">Home</a>
+                        <a href="#aboutme" onclick="toggleAboutHtml();">About Me</a>
+                        <a href="#contact" onclick="toggleContactHtml();">Contact</a>
+                    </div>
+                </div>
             </nav>
-            <div hidden="true">
-                <ul class="menu">
-                    <!-- list items here-->
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#"> About Me</a></li>
-                </ul>
-            </div>
+            
         </header>
         <main class="page-main">
             <script src="src/js/contents.js" async></script>

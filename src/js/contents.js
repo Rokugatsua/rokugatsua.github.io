@@ -21,10 +21,16 @@ function writeArticle(article) {
 }
 var artivl = { title: "Welcome ", content: "print('Hello, World from python 3')", nb: "" };
 var artivl2 = {
-    title: "About",
-    content: "This site and all using Typescript 3.8,  \n    for DOM content using traditional function. \n    you can access see ts file via inspect or visit this repository\n    https://github.com/Rokugatsua/rokugatsua.github.io ",
+    title: "About this",
+    content: "This site and all using Typescript 3.8,  \n    for DOM content using traditional function. \n    you can access and see ts file via inspect or visit this repository\n    https://github.com/Rokugatsua/rokugatsua.github.io ",
     nb: ""
+};
+var artivl3 = {
+    title: "Prologue of Hij",
+    content: "Hij is media website for media news,\n    built with Django and host with Heroku, you can \n    visit http://hij-media.herokuapp.com",
+    nb: "-- the website under development."
 };
 writeArticle(artivl);
 writeArticle(artivl2);
+writeArticle(artivl3);
 //# sourceMappingURL=contents.js.map
