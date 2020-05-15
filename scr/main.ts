@@ -101,7 +101,7 @@ function toggleContactHtml(){
     }
     let contactMe = {
         title:"Contact",
-        content:`intrest to hire me into your team?`,
+        content:`interest to hire me into your team?`,
         nb:""
     }
     writeContactHtml(contentBox,contactMe)

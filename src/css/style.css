@@ -72,6 +72,9 @@ body {
 .logo {
     font-family: 'Courier New', Courier, monospace;
 }
+.logo div{
+    display: inline-block;
+}
 .menu a {
     display: inline-block;
     text-decoration: none;
@@ -192,6 +195,9 @@ p {
     }
     .dropdown-content {
         left: 0;
+    }
+    #katakana {
+        display: none;
     }
 }
 
