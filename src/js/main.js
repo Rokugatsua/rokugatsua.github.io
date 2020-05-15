@@ -13,6 +13,6 @@ function writeElFootNav(htmlid, url, imgPath) {
     a.appendChild(img);
     img.setAttribute("src", imgPath);
 }
-writeElFootNav("foot-nav", "#", "src/img/icons8-github-50.png");
-writeElFootNav("foot-nav", "#", "src/img/icons8-linkedin-50.png");
+writeElFootNav("foot-nav", "https://github.com/rokugatsua", "src/img/icons8-github-50.png");
+writeElFootNav("foot-nav", "https://linkedin.com/in/juniansyahs", "src/img/icons8-linkedin-50.png");
 //# sourceMappingURL=main.js.map

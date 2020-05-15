@@ -135,12 +135,51 @@ body {
     max-width: 500px;
 }
 
-#context-box header {
-    padding-bottom: 10px;
+.page-main .contents-art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contents {
+    padding: 10px 5px 10px 5px;
+    margin: 5px;
+}
+
+
+.contents header {
+    padding-bottom: 5px;
+}
+
+.page-main aside {
+    width: 200px;
+}
+.page-main aside li{
+    display: inline-block;
+    margin: 7px 5px 3px 5px;
+}
+.page-main aside img {
+    width: 80px;
+    height: 80px;
 }
 @media screen and (min-width: 768px) {
     .page-main {
         padding-left: 90px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .page-main aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:500px){
+    .page-main aside img {
+        width: 40px;
+        height: 40px;
     }
 }
 
