@@ -277,4 +277,9 @@ p {
 
   #list-soci li a{
       text-decoration: none;
+      color: #FFFFFF;
   }
+  #list-soci li a:hover {
+      color:#000000;
+  }
+  
