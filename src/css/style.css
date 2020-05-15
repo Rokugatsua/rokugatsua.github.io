@@ -147,6 +147,10 @@ body {
     margin: 5px;
 }
 
+p {
+    word-break: break-all;
+}
+
 
 .contents header {
     padding-bottom: 5px;
