@@ -73,7 +73,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .logo div{
-    display: inline-block;
+    display: inline;
 }
 .menu a {
     display: inline-block;
