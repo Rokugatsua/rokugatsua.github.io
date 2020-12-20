@@ -79,9 +79,9 @@ export default {
           const axiosConfig = {
             header: { "Content-Type": "application/x-www-form-urlencoded" }
           };
-          const response = await axios.post("/contact", 
+          const response = await axios.post("/", 
             encode({
-              "form-name": "contactMe", ...this.form
+              "form-name": "contact-me", ...this.form
             }), axiosConfig
           )
           console.log(response.data)
