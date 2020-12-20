@@ -12,7 +12,7 @@
 export default {
   data() {
     return {
-      motto: 'Hello, I am Jun. I am self taught programer web development mainly in Frontend.',
+      motto: 'Hello, I am Jun. I am self taught programmer web development mainly in frontend.',
       count: 0
     }
   },
