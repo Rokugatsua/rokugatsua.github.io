@@ -9,28 +9,28 @@
         <ul class="navbar-nav ms-auto me-4">
           <li class="nav-item">
             <router-link to="/project" 
-              :class="['nav-link', isActive === 'project' ? 'active': '']"
+              :class="['nav-link', isActive === 'Project' ? 'active text-primary fw-bold': '']"
             >
               Project
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/about" 
-              :class="['nav-link', isActive === 'about' ? 'active': '']"
+              :class="['nav-link', isActive === 'About' ? 'active text-primary': '']"
             >
               About
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/blog" 
-              :class="['nav-link', isActive === 'blog' ? 'active': '']"
+              :class="['nav-link', isActive === 'Blog' ? 'active text-primary': '']"
             >
               Blog
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contact" 
-              :class="['nav-link', isActive === 'contact' ? 'active': '']"
+              :class="['nav-link', isActive === 'Contact' ? 'active text-primary': '']"
             >
               Contact
             </router-link>
@@ -45,11 +45,13 @@
 export default {
   data() {
     return {
-      isActive: 'home'
+      // isActive: 'home'
     }
   },
-  watch:{
-    
+  computed:{
+    isActive() {
+      return this.$route.name
+    }
   }
 }
 </script>

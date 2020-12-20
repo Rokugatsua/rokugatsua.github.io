@@ -1,5 +1,5 @@
 <template>
-    <div class="row align-items-center justify-content-between h-100">
+    <div class="row align-items-center justify-content-between h-100 content mt-5">
       <div class="col-lg-6 col-md-9">
         <h1>
           Hello, I am Jun. 
