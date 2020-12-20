@@ -8,7 +8,7 @@ import Contact from '../views/Contact.vue'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: Home
   },
@@ -28,7 +28,7 @@ const routes = [
     component: Blogs
   },
   {
-    path: '/',
+    path: '/contact',
     name: 'Contact',
     component: Contact
   }
