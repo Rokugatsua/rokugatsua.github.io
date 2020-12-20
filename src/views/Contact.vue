@@ -59,18 +59,23 @@ export default {
     }
   },
   methods:{
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join("&")
-    },
+    // encode(data) {
+    //   return Object.keys(data)
+    //     .map(
+    //       key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+    //     )
+    //     .join("&")
+    // },
     async mailme(event){
       event.preventDefault()
       if (this.form.email && this.form.name.length >= 3 && this.form.message ) {
         // console.log('form submision')
         try {
+          const encode = (data) => Object.keys(data).map(
+             key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          )
+          .join("&")
+
           const axiosConfig = {
             header: { "Content-Type": "application/x-www-form-urlencoded" }
           };
