@@ -16,15 +16,15 @@
         <input type="hidden" name="form-name" value="contact-me" />
         <div class="mb-3">
           <label for="emailInput" class="form-label">E-mail</label>
-          <input type="email" :class="['form-control', err.email ? 'is-invalid' :'']" id="emailInput" v-model="form.email">
+          <input type="email" name="email" :class="['form-control', err.email ? 'is-invalid' :'']" id="emailInput" v-model="form.email">
         </div>
         <div class="mb-3">
           <label for="nameinput" class="form-label">Name</label>
-          <input type="text" :class="['form-control', err.name ? 'is-invalid' :'']" id="nameinput" v-model="form.name">
+          <input type="text" name="name" :class="['form-control', err.name ? 'is-invalid' :'']" id="nameinput" v-model="form.name">
         </div>
         <div class="mb-3">
           <label for="msginput" class="form-label">Tell about your project</label>
-          <textarea id="msginput" rows="4" :class="['form-control', err.msg ? 'is-invalid' :'']" v-model="form.message"></textarea>
+          <textarea name="message" id="msginput" rows="4" :class="['form-control', err.msg ? 'is-invalid' :'']" v-model="form.message"></textarea>
         </div>
         <div class="row justify-content-center">
           <button type="submit" class="btn btn-primary rounded-pill col-3 fw-bolder">Send</button>
