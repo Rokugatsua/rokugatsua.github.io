@@ -12,7 +12,7 @@
         <button type="button" @click="hide('failed')" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <form name="contact-me" v-on:submit="mailme" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form name="contact-me" method="post" v-on:submit="mailme" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact-me" />
         <div class="mb-3">
           <label for="emailInput" class="form-label">E-mail</label>
@@ -79,7 +79,7 @@ export default {
           const axiosConfig = {
             header: { "Content-Type": "application/x-www-form-urlencoded" }
           };
-          const response = await axios.post("/", 
+          const response = await axios.post("/contact", 
             encode({
               "form-name": "contactMe", ...this.form
             }), axiosConfig
