@@ -7,9 +7,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item d-lg-none">
+            <router-link to="/" 
+              :class="['nav-link', isActive === 'Home' ? 'active text-primary': '']"
+            >
+              Home
+            </router-link>
+          </li>
           <li class="nav-item">
             <router-link to="/project" 
-              :class="['nav-link', isActive === 'Project' ? 'active text-primary fw-bold': '']"
+              :class="['nav-link', isActive === 'Project' ? 'active text-primary': '']"
             >
               Project
             </router-link>

@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-content-center">
-    <div class="col-lg-6">
+    <div class="col-sm-10 col-md-8 col-lg-6">
       <h1 class="text-center h1 fw-bolder">Let's Work Together</h1>
       <p class="text-center fs-6 text-secondary">How can i help you?</p>
       <div class="alert alert-success alert-dismissible fade show" v-show="submision.success" role="alert">
@@ -84,9 +84,8 @@ export default {
               "form-name": "contact-me", ...this.form
             }), axiosConfig
           )
-          console.log(response.data)
-
           console.log('Form successfully submitted')
+          
           this.submision.success = true
           this.email = ''
           this.name = ''

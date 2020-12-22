@@ -1,11 +1,11 @@
 <template>
-    <div class="row align-items-center justify-content-between h-100 content mt-5">
+    <div class="row align-items-center justify-content-between h-100 content mt-5 my-dash">
       <div class="col-lg-6 col-md-9">
-        <h1>
-          Hello, I am Jun. 
+        <h1 class="mb-3 mb-sm-1">
+          Hello, I am Jun.
         </h1>
-        <h3>
-         {{ motto }} <span class="text-primary">{{(count % 2 === 0) ? '_' : ''}}</span>
+        <h3 class="me-5 me-md-0 mb-4 mb-sm-2">
+         {{ motto }} <span class="text-primary fw-bold">{{(count % 2 === 0) ? '_' : ''}}</span>
         </h3>
         <div class="row justify-content-around">
           <div class="col-4">
@@ -32,7 +32,7 @@
       </div>
       <div class="col-lg-3">
         <div class="h1 d-none d-lg-flex flex-lg-column align-items-center justify-content-center">
-          <span v-for="code in hiraganaBrand" :key="code">{{code}}</span>
+          <span v-for="code in hiraganaBrand" :key="code" class="text-secondary">{{code}}</span>
         </div>
       </div>
     </div>

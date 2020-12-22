@@ -1,7 +1,7 @@
 <template>
   <navbar />
-  <div class="container-lg d-flex flex-column content min-vh-100">
-    <div class="mb-auto d-flex flex-column h-100">
+  <div class="container-lg d-flex flex-column content main-bg min-vh-100">
+    <div class="mb-auto d-flex flex-column h-100 ">
       <router-view />
     </div>
     <foot-nav></foot-nav>
