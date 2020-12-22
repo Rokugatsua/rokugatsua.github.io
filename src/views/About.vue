@@ -45,7 +45,7 @@
           Skills
         </h4>
         <div class="row row-cols-4 row-cols-sm-5 row-cols-lg-6 g-2 g-lg-1 align-items-center">
-          <div class="col text-center" v-for="skill in skills" :key="skill.id">
+          <div class="col text-center opacity-50" v-for="skill in skills" :key="skill.id">
             <div class="px-3 py-1" data-bs-toggle="tooltip" data-bs-placement="top" :title="skill.name">
               <img :src="`/img/icons/${skill.icon}`" :alt="skill.name" class="img-fluid">
             </div>
