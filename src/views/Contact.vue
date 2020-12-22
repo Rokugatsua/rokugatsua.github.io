@@ -31,7 +31,7 @@
         </div>
       </form>
       <hr>
-      <p class="text-center">or <a href="mailto:rokugatsua@outlook.co.id" class="fs-5 fw-bold text-decoration-none text-dark">rokugatsua@outlook.co.id</a></p>
+      <p class="text-center">or E-mail me at :  <a href="mailto:rokugatsua@outlook.co.id" class="fs-5 fw-bold text-decoration-none text-dark">rokugatsua@outlook.co.id</a></p>
     </div>
   </div>
 </template>

@@ -30,4 +30,8 @@ body {
     background-repeat: no-repeat;
     background-position: right;
   }
+
+  .content-bg {
+    background-color: #f2f2f2b4;
+  }
 }
