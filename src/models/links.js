@@ -33,6 +33,28 @@ const social = [
     }
 ]
 
+const contact = [
+    {
+        label: 'Mail',
+        link: 'mailto:juniansyahs@gmail.com',
+        user: 'juniansyahs@gmail.com',
+        icon: 'envelope-at-fill.svg'
+    },
+    {
+        label: 'Linkedin',
+        link: 'https://linkedin.com/in/juniansyahs',
+        user: 'juniansyahs',
+        icon: 'linkedin.svg'
+    },
+    {
+        label: 'Twitter',
+        link: 'https://twitter.com/rokugatsua',
+        user: '@rokugatsua',
+        icon: 'twitter.svg'
+    }
+]
+
 export default ({
-    social
+    social,
+    contact
 })
