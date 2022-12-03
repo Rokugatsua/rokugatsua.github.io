@@ -29,13 +29,6 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/blog" 
-              :class="['nav-link', isActive === 'Blog' ? 'active text-primary': '']"
-            >
-              Blog
-            </router-link>
-          </li>
-          <li class="nav-item">
             <router-link to="/contact" 
               :class="['nav-link', isActive === 'Contact' ? 'active text-primary': '']"
             >
