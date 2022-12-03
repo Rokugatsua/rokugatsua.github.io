@@ -1,27 +1,28 @@
 <template>
   <section>
-    <header>
-      <h2>About Me</h2>
+    <header class="row">
+      <h2 class="col-lg-8">About Me</h2>
+      <div class="col-2">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic outline">
+          <button :class="{'active': lang=='english'}" type="button" class="btn btn-outline-dark" @click="changeLanguage('english')">english</button>
+          <button :class="{'active': lang=='indonesia'}" type="button" class="btn btn-outline-dark" @click="changeLanguage('indonesia')">indonesian</button>
+        </div>
+      </div>
     </header>
-    <main class="row flex-column flex-md-row-reverse align-items-center content-bg">
-      <div class="col-4 text-center my-4 my-md-0">
+    <main class="row flex-column flex-md-row-reverse align-items-center content-bg justify-content-between">
+      <div class="col-2 text-center my-4 my-md-0">
         <img src="/img/rokugatsua-photo.jpeg" class="d-none d-md-block rounded img-thumbnail" alt="aan juniansyah photo">
         <img src="/img/rokugatsua-photo.jpeg" class="d-block mx-auto d-md-none rounded-circle img-thumbnail" alt="aan juniansyah photo">
       </div>
-      <div class="col" v-if="lang == 'indonesia'">
-        <p>
-          Perkenalkan nama saya Aan Juniansyah, saya seorang <i>Self Taught Programmer</i> di pengembangan website. saya mengubah karir saya, menjadi programmer. sekarang fokus dalam <strong>Fullstack Development</strong>.
+      <div class="col col-lg-9 mt-5" v-if="lang == 'indonesia'">
+        <p v-for="content in aboutme.content.id">
+          {{content}}
         </p>
-        <p>
-          Selain HTML dan  CSS, saya juga menggunakan CSS framewok,  seperti Bootstrap, TailwindCss, Materializecss dan terkadang mengunakan CSS pre-processor. saat ini fokus untuk menguasai Vue js 3  dan ekositemnya (<i>router, state management, server site rendering, bundler, dll</i>) untuk <strong>Frontend Development</strong>.
-        </p>
-        <p>
-          Untuk bagian <strong>Backend Development</strong>, biasanya  mengunakan PHP, Javascript dan Python untuk pengembangan website. untuk framework yang biasa dipakai adalah CodeIgniter4, Express, Flask. namun dapat juga mengunakan framework lainnya.
-        </p>
-        <p>
-          Saya sedia untuk bekerja di perusahaan atau dalam sebuah proyek. silahkan  untuk mengubungi saya jika tertarik untuk bekerjasama dengan saya.
-            <router-link to="/contact">Kontak saya</router-link>
-        </p>
+      </div>
+      <div class="col col-lg-9 mt-5" v-else-if="lang == 'english'">
+        <p v-for="contentEn in aboutme.content.en">
+          {{contentEn}}
+        </p> 
       </div>
     </main>
     <div class="row flex-column flex-lg-row my-3 g-2">
@@ -40,19 +41,6 @@
           </li>
         </ul>
       </footer>
-      <div class="col">
-        <h4>
-          Skills
-        </h4>
-        <div class="row row-cols-4 row-cols-sm-5 row-cols-lg-6 g-2 g-lg-1 align-items-center">
-          <div class="col text-center opacity-50" v-for="skill in skills" :key="skill.id">
-            <div class="px-3 py-1" data-bs-toggle="tooltip" data-bs-placement="top" :title="skill.name">
-              <img :src="`/img/icons/${skill.icon}`" :alt="skill.name" class="img-fluid">
-            </div>
-          </div>
-        </div>
-
-      </div>
       <!-- <div class="col">
       </div> -->
     </div>
@@ -61,10 +49,13 @@
 </template>
 
 <script>
+import about from '../models/about'
+
 export default {
   data(){
     return {
-      lang: 'indonesia',
+      aboutme: about,
+      lang: 'english',
       skills: [
         {id:1, name: 'javascript', icon:'10440540451540553614.svg'},
         {id:2, name: 'PHP', icon:'966499331553750209.svg'},
@@ -84,6 +75,14 @@ export default {
         {id:1, name: 'twitter', link:"https://twitter.com/rokugatsua", icons:'<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>'},
         // {id:4, name: '', link:'', icons:''},
       ]
+    }
+  },
+  methods: {
+    changeLanguage(language){
+      if (this.lang == language) {
+        return
+      }
+      this.lang = language
     }
   }
 }
