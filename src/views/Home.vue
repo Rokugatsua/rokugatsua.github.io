@@ -2,7 +2,7 @@
     <div class="row align-items-center justify-content-between h-100 content mt-5 my-dash">
       <div class="col-lg-6 col-md-9">
         <h1 class="mb-3 mb-sm-1">
-          Hello, I am Jun.
+          {{ greeting }}
         </h1>
         <h3 class="me-5 me-md-0 mb-4 mb-sm-2">
          {{ motto }} <span class="text-primary fw-bold">{{(count % 2 === 0) ? '_' : ''}}</span>
@@ -42,7 +42,8 @@
 export default {
   data() {
     return {
-      motto: 'I am self taught programmer web development mainly in frontend.',
+      greeting: 'Hello, I am Juni.',
+      motto: 'I am self taught programmer and make a game.',
       count: 0,
       hiraganaBrand: ['ろ','く','が','つ','あ']
     }
