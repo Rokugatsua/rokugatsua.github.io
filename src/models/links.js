@@ -33,6 +33,6 @@ const social = [
     }
 ]
 
-export default links({
+export default ({
     social
 })

@@ -5,6 +5,7 @@ import Project from '../views/Project.vue'
 import About from '../views/About.vue'
 import Blogs from '../views/Blog.vue'
 import Contact from '../views/Contact.vue'
+import Linktree from '../views/Linktree.vue'
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/linktree',
+    name: 'Linktree',
+    component: Linktree
   }
 
 ]
