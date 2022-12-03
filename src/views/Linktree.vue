@@ -1,12 +1,12 @@
 <template>
-    <div class="d-flex justify-content-center">
-        <div class="w-50">
-            <h1 class="text-center">Link Tree</h1>
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+            <h1 class="text-center h1 fw-bolder">Link Tree</h1>
             <div class="list-group">
-                <a :href="account.link" v-for="account in social_link" :title="account.label" class="list-group-item list-group-item-action">
-                    <div class="d-flex">
-                        <img :src="`/img/icons/${account.icon}`" :alt="account.label" class="img-fluid" width="24" height="24">
-                        <span class="flex-fill text-center">
+                <a :href="account.link" v-for="account in social_link" :title="account.label" class="list-group-item list-group-item-action d-flex justify-content-center">
+                    <div class="col-6">
+                        <img :src="`/img/icons/${account.icon}`" :alt="account.label" class="img-fluid mx-4" width="24" height="24">
+                        <span class="">
                             {{account.label}}
                         </span>
                     </div>
