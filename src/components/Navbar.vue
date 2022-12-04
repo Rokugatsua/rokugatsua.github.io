@@ -15,10 +15,10 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/project" 
-              :class="['nav-link', isActive === 'Project' ? 'active text-primary': '']"
+            <router-link to="/games" 
+              :class="['nav-link', isActive === 'Games' ? 'active text-primary': '']"
             >
-              Project
+              Games
             </router-link>
           </li>
           <li class="nav-item">
