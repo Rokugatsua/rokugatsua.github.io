@@ -6,6 +6,7 @@ import About from '../views/About.vue'
 import Blogs from '../views/Blog.vue'
 import Contactme from '../views/Contactme.vue'
 import Linktree from '../views/Linktree.vue'
+import Games from '../views/Games.vue'
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: '/linktree',
     name: 'Linktree',
     component: Linktree
+  },
+  {
+    path: '/games',
+    name: 'Games',
+    component: Games
   }
 ]
 
