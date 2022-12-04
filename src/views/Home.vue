@@ -19,7 +19,7 @@
             </router-link>
           </div>
           <div class="col-4">
-            <router-link to="/project" class="text-decoration-none">
+            <router-link to="/games" class="text-decoration-none">
             my works
             <i class="text-primary ms-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
