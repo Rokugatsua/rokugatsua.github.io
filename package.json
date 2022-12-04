@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp redirects.txt dist/_redirects"
+    "build": "vite build ",
+    "build-redirect": "vite build && cp redirects.txt dist/_redirects"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
