@@ -4,7 +4,9 @@ import Home from '../views/Home.vue'
 import Project from '../views/Project.vue'
 import About from '../views/About.vue'
 import Blogs from '../views/Blog.vue'
-import Contact from '../views/Contact.vue'
+import Contactme from '../views/Contactme.vue'
+import Linktree from '../views/Linktree.vue'
+import Games from '../views/Games.vue'
 
 const routes = [
   {
@@ -30,9 +32,18 @@ const routes = [
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: Contactme
+  },
+  {
+    path: '/linktree',
+    name: 'Linktree',
+    component: Linktree
+  },
+  {
+    path: '/games',
+    name: 'Games',
+    component: Games
   }
-
 ]
 
 export default createRouter({
