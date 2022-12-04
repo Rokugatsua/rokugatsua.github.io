@@ -41,7 +41,7 @@
             </main>
         </div>
         <div class="col-md-8 col-lg-4">
-            <img :src="('/src/assets/img/'+ game.source)" :alt="game.title" class="img-fluid img-thumbnail" >
+            <img :src="('/img/'+ game.source)" :alt="game.title" class="img-fluid img-thumbnail" >
         </div>
     </div>
 </template>
